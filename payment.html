@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Shopyourstyle</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .payment-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="NavOne">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="Login.html">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+    <main class="containerFour">
+        <div class="payment-container">
+            <h2>Payment Details</h2>
+            <form>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" required>
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" required placeholder="MM/YY">
+
+                <label for="cvv">CVV:</label>
+                <input type="number" id="cvv" required>
+
+                <label for="name">Cardholder Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <label for="currency">Currency:</label>
+                <select id="currency" required>
+                    <option value="USD">USD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                </select>
+
+                <button id="navigateButton" type="submit">Pay Now</button>
+            </form>
+        </div>
+    </main>
+
+    <br><br><br><br>
+
+    <script>
+        // Get a reference to the button
+        var navigateButton = document.getElementById("navigateButton");
+
+        // Add a click event listener to the button
+        navigateButton.addEventListener("click", function() {
+            // Set the URL of the second page
+            window.location.href = "OrderS.html"; // Replace with your desired page URL
+        });
+    </script>
+
+    <footer class="bg-gray-900 text-white text-center py-2">
+        <p>&copy; 2023 Shopyourstyle</p>
+    </footer>
+</body>
+
+</html>

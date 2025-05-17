@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Shopyourstyle</title>
+</head>
+
+<body>
+
+    <nav class="NavOne">
+        <ul>
+            <li><a href="Home_2.html">Home</a></li>
+            <li><a href="About_2.html">About</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a id="contact" href="Profile.php">Profile</a></li>
+            <li><a href="Login.php">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <header class="bg-gray-900 text-white text-center py-4">
+        <h1 class="text-4xl font-bold">Shopyourstyle</h1>
+    </header>
+
+    <nav class="NavTwo">
+        <ul>
+            <li style=" background-color: rgb(50, 76, 96)"><a id="men" href="Men_2.html">Men</a></li>
+            <li><a id="women" href="Women_2.html">Women</a></li>
+            <li><a id="kids" href="Kids_2.html">Kids</a></li>
+        </ul>
+    </nav>
+
+    <main class="containerFour">
+        <div class="image-container">
+            <section>
+                <div class="image-card">
+                    <img class="image" src="image1.jpeg" alt="Image 1">
+                    <p class="price">$19.99</p>
+                    <button id="navigateButton" class="buy-button" onclick="addToCart('image1.jpeg', 'Product 1', 19.99)">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image2.webp" alt="Image 2">
+                    <p class="price">$24.99</p>
+                    <button id="navigateButton" class="buy-button" onclick="addToCart('image2.webp', 'Product 2', 24.99)">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image3.webp" alt="Image 2">
+                    <p class="price">$44.99</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image4.webp" alt="Image 2">
+                    <p class="price">$34.99</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+            </section>
+            <section>
+                <div class="image-card">
+                    <img class="image" src="image5.webp" alt="Image 1">
+                    <p class="price">$36.99</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image6.webp" alt="Image 2">
+                    <p class="price">$31.80</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image7.webp" alt="Image 2">
+                    <p class="price">$49.98</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image8.webp" alt="Image 2">
+                    <p class="price">$29.45</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+                <!-- Add more image cards here -->
+            </section>
+            <section>
+                <div class="image-card">
+                    <img class="image" src="image9.webp" alt="Image 1">
+                    <p class="price">$25.00</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image10.webp" alt="Image 2">
+                    <p class="price">$23.49</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image11.webp" alt="Image 2">
+                    <p class="price">$10.00</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image12.webp" alt="Image 2">
+                    <p class="price">$29.00</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+                <!-- Add more image cards here -->
+            </section>
+            <section>
+                <div class="image-card">
+                    <img class="image" src="image13.webp" alt="Image 1">
+                    <p class="price">$13.00</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image14.webp" alt="Image 2">
+                    <p class="price">$22.29</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image15.webp" alt="Image 2">
+                    <p class="price">$24.75</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image16.webp" alt="Image 2">
+                    <p class="price">$28.00</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+                <!-- Add more image cards here -->
+            </section>
+            <section>
+                <div class="image-card">
+                    <img class="image" src="image17.webp" alt="Image 1">
+                    <p class="price">$22.25</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image18.webp" alt="Image 2">
+                    <p class="price">$55.79</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image19.webp" alt="Image 2">
+                    <p class="price">$11.99</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+
+                <div class="image-card">
+                    <img class="image" src="image20.webp" alt="Image 2">
+                    <p class="price">$26.95</p>
+                    <button id="navigateButton" class="buy-button">Buy</button>
+                </div>
+                <!-- Add more image cards here -->
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // Get references to all Buy buttons
+        var buyButtons = document.querySelectorAll(".buy-button");
+    
+        // Add a click event listener to each Buy button
+        buyButtons.forEach(function(button) {
+            button.addEventListener("click", function() {
+                // Set the URL of the second page
+                window.location.href = "Cart.html"; // Replace with your desired page URL
+            });
+        });
+    </script>
+    
+
+    <footer class="bg-gray-900 text-white text-center py-2">
+        <p>&copy; 2023 Shopyourstyle</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Shopyourstyle</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .cart-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .product {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .product img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        .product-details {
+            flex-grow: 1;
+        }
+
+        .product-name {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .product-price {
+            color: #007BFF;
+            font-weight: bold;
+        }
+
+        .total-price {
+            color: #007BFF;
+            font-weight: bold;
+            margin-left: 10%
+        }
+
+        .cart-total {
+            color: #007BFF;
+            font-weight: bold;
+            margin-left: 85%
+        }
+
+        .quantity-input {
+            width: 40px;
+            padding: 5px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .remove-button {
+            background-color: #dc3545;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .checkout-button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="NavThree">
+        <ul>
+            <li><a href="Home_2.html">Home</a></li>
+            <li><a href="About_2.html">About</a></li>
+            <li><a href="Contact_2.html">Contact</a></li>
+            <li><a href="Login.php">Sign Out</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br><br>
+
+    <main class="containerFour">
+        <div class="cart-container">
+            <h2>Your Shopping Cart</h2>
+            <div class="product">
+                <img src="image30.jpeg" alt="Product 1">
+                <div class="product-details">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-price">$30.00</div>
+                </div>
+                <input class="quantity-input" type="number" value="1" onchange="calculateTotal(this)">
+                <button class="remove-button">Remove</button>
+                <div class="total-price">$30.00</div>
+            </div>
+            
+            <!-- <div class="product">
+                <img src="image30.jpeg" alt="Product 1">
+                <div class="product-details">
+                    <div class="product-name">Product 1</div>
+                    <div class="product-price">$19.99</div>
+                </div>
+                <input class="quantity-input" type="number" value="1" onchange="calculateTotal(this)">
+                <button class="remove-button">Remove</button>
+                <div class="total-price">$19.99</div>
+            </div> -->
+            <!-- Add more products here -->
+            <div class="cart-total">
+                Total: <span id="cartTotal">$30.00</span>
+            </div>
+            <br>
+            <button id="navigateButton" class="checkout-button">Checkout</button>
+            <br><br>
+        </div>
+    </main>
+
+    <script>
+        // Function to calculate the total price for a product
+        function calculateTotal(input) {
+            const productDiv = input.parentElement;
+            const productPrice = parseFloat(productDiv.querySelector(".product-price").textContent.replace('$', ''));
+            const quantity = parseInt(input.value);
+            const total = productPrice * quantity;
+            productDiv.querySelector(".total-price").textContent = '$' + total.toFixed(2);
+
+            // Update the cart's total price
+            const totalPrices = document.querySelectorAll('.total-price');
+            let cartTotal = 0;
+            totalPrices.forEach(priceDiv => {
+                cartTotal += parseFloat(priceDiv.textContent.replace('$', ''));
+            });
+            document.getElementById('cartTotal').textContent = '$' + cartTotal.toFixed(2);
+        }
+
+        // Get a reference to the button
+        var navigateButton = document.getElementById("navigateButton");
+
+        // Add a click event listener to the button
+        navigateButton.addEventListener("click", function() {
+            // Set the URL of the second page
+            window.location.href = "payment.html"; // Replace with your desired page URL
+        });
+    </script>
+
+    <br><br><br><br>
+
+    <footer class="bg-gray-900 text-white text-center py-2">
+        <p>&copy; 2023 Shopyourstyle</p>
+    </footer>
+</body>
+
+</html>

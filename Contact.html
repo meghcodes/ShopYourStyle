@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Shopyourstyle</title>
+
+    <script>
+        function submitForm() {
+            var isLoggedIn = true;
+
+            if (isLoggedIn) {
+                alert("Feedback: Form submitted successfully!");
+            } else {
+                alert("Feedback: Login failed. Please check your credentials.");
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <nav class="NavOne">
+        <ul>
+            <li><a id="home" href="Home.html">Home</a></li>
+            <li><a id="about" href="About.html">About</a></li>
+            <li><a id="contact" href="Contact.html">Contact</a></li>
+            <li><a id="login" href="Login.php">Login</a></li>
+        </ul>
+    </nav>
+
+    <header class="bg-gray-900 text-white text-center py-4">
+        <h1 class="text-4xl font-bold">Shopyourstyle</h1>
+    </header>
+
+    <nav class="NavTwo">
+        <ul>
+            <br>
+            <br>
+            <br>
+        </ul>
+    </nav>
+
+    <main class="containerTwo">
+        <section>
+            <br><br>
+            <h2 class="text-2xl font-semibold mb-4">Contact Us</h2>
+            
+            <section class="contact-form">
+                <h2>Get in Touch</h2>
+                <form method="POST" onsubmit="submitForm();">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button class="simple-button" type="submit">Submit</button>
+                </form>
+            </section>
+
+            <br><br>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white text-center py-2">
+        <p>&copy; 2023 Shopyourstyle</p>
+    </footer>
+</body>
+</html>

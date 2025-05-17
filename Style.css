@@ -1,0 +1,244 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 0px;
+    padding: 0 50px;
+    background-color: #F7DC6F;
+}
+
+.containerTwo {
+    max-width: 1400px;
+    margin: 0 0px;
+    padding: 0 200px;
+    text-align: justify;
+}
+
+.containerThree {
+    max-width: 1400px;
+    margin: 0 0px;
+    padding: 0 550px;
+    text-align: justify;
+}
+
+.containerFour {
+    max-width: 1400px;
+    margin: 0 0px;
+    padding: 0 50px;
+    text-align: justify;
+}
+
+/* Header Styles */
+header {
+    /* background-color: #F4D03F;  */
+    background-image: url('Bgm.jpg');;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-style: italic;
+    font-size: 100px;
+    font-family: Georgia, serif;
+}
+
+/* Main Content Styles */
+section {
+    margin: 20px 0;
+}
+
+/* Category Styles */
+.category {
+    background-color: #F5F5F5; 
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.category h3 {
+    font-size: 24px;
+}
+
+.category img {
+    max-width: 100%;
+}
+
+footer {
+    background-color: #333; 
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #45A049; 
+}
+
+
+.NavOne {
+    background-color: #333; 
+    overflow: hidden; 
+    text-align: center;
+}
+
+.NavTwo {
+    background-color: #393636; 
+    overflow: hidden; 
+}
+
+.NavOne ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    display: inline-block; 
+}
+
+.NavTwo ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.NavOne li {
+    display: inline-block; 
+}
+
+.NavTwo li {
+    display: inline-block; 
+}
+
+.NavThree {
+    background-color: #393636; 
+    overflow: hidden; 
+}
+
+.NavThree ul {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0; 
+}
+
+.NavThree li {
+    display: inline-block; 
+}
+
+.NavThree a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 20px; 
+    text-decoration: none; 
+}
+
+.NavOne a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 100px; 
+    text-decoration: none; 
+}
+
+.NavTwo a {
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 212px; 
+    text-decoration: none; 
+}
+
+
+nav a:hover {
+    background-color: #555;
+    color: white;
+}
+
+/* Define styles for the button */
+.simple-button {
+    background-color: #007BFF; /* Background color */
+    color: #ffffff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Cursor on hover */
+}
+
+/* Hover effect */
+.simple-button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+/* Products */
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* gap: 20px; */
+}
+
+.image-card {
+    text-align: center;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    padding: 10px;
+    width: 200px;
+}
+
+.image {
+    max-width: 100%;
+    height: auto;
+}
+
+.price {
+    font-weight: bold;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
